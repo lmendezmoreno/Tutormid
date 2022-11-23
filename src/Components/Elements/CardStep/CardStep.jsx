@@ -1,5 +1,5 @@
 import React from 'react'
-import { NewCard, ContainerIcon } from './Styled'
+import { NewCard, ContainerIcon, Card, Title } from './Styled'
 /*, NewButton, NewAlert*/
 import { BsSearch } from "react-icons/bs";
 
@@ -11,9 +11,12 @@ export default function CardStep() {
       <ContainerIcon>
       <BsSearch />
       </ContainerIcon>
-      <div>
-      1. Encuentra a tu profesor  
-      </div>
+      <Card>
+        <Title>
+        1. Encuentra a tu profesor
+        </Title>
+      Utiliza filtros para limitar tu búsqueda y encontrar el que mejor se ajuste a tus necesidades  
+      </Card>
     </NewCard>
     
     )

@@ -9,13 +9,14 @@ import {Link} from 'react-router-dom';
  // para luego usarla en la otra web. 
 
 export const NavbarContainer = styled.div`
-  
   width: 100%;
   height: 80%;
   position: sticky;
   top: 0;
   z-index: 99;
-  background-color: ${colors.bgLight};
+  border-bottom: 1px solid ${colors.lineColor};
+  background:white;
+  padding:20px 30px;
 `
 
 export const NavbarWrapper = styled.div`
@@ -34,6 +35,9 @@ export const IconLogo = styled(Link)`
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
+  img{
+    margin-top:-25px;
+  }
   `
 
 
@@ -46,27 +50,26 @@ export const Menu = styled.ul`
 
   @media screen and (max-width: 960px){ 
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     position: absolute;
-    top: 60px; 
-    left: ${( { click } ) => (click ? 0 : '-100%') }; // operador ternario
+    top: 60px;
+    left: ${({ click }) => (click ? 0 : "-100%")};
     flex-direction: column;
     transition: 0.5s all ease-in;
     background: ${colors.bgLight};
-
+    padding: 0 1rem;
+    justify-content: flex-start;
   }
-
 `
 
 export const MenuItem = styled.li`
   height: 100%;
   padding: 0.5rem 1.5rem;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
   font-size: 1.2rem;
   font-weight: 400;
-  
 
   &:hover{ 
     background-color: ${colors.bgWhite} ;
@@ -76,7 +79,9 @@ export const MenuItem = styled.li`
 
   @media screen and (max-width: 960px) { 
     width: 100%;
-    height: 90px;
+    height: 48px;
+    padding: .5rem 0;
+    justify-content: flex-start;
   }
 `
 
@@ -103,6 +108,10 @@ export const StyledButton = styled.button`
   color: #010606 ;
  }
 
+ @media screen and (max-width: 960px) {
+  margin-right: auto;
+ }
+
 `
 
 export const IconLogoMobile = styled.div`
@@ -114,6 +123,8 @@ export const IconLogoMobile = styled.div`
   }
 `
 
+
+ 
 
 
 

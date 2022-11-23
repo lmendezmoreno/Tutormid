@@ -13,7 +13,7 @@ import PanelT from '../Pages/Teacher/Panel/PanelT';
 
 export default function Router() {
   return (
-
+  
       <BrowserRouter>
       <Routes>
    
