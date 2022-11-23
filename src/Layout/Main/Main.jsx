@@ -1,14 +1,15 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom';
 import NewButton from '../../Components/Elements/Button/ButtonStyled';
-
-
+import Footer from '../../Components/Groups/Footer/Footer'; 
+import Navbar from '../../Components/Groups/Navbar/Navbar'
 export default function Main() {
 
   return (
     <div>
-      Main Layout
-      <Outlet />
+      <Navbar/>
+        <Outlet />
+      <Footer />
     </div>
   )
 }

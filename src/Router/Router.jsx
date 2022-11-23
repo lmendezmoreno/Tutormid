@@ -1,5 +1,5 @@
 import React from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Navigate, Routes, Route } from "react-router-dom";
 import Home from '../Pages/Home/Home';
 import Ads from '../Pages/Ads/Ads';
 import NotFound from '../Pages/NotFound/NotFound';
@@ -11,12 +11,12 @@ import PanelS from '../Pages/Student/Panel/PanelS';
 import Chat from '../Pages/Student/Chat/Chat';
 import PanelT from '../Pages/Teacher/Panel/PanelT';
 
-
 export default function Router() {
   return (
 
       <BrowserRouter>
       <Routes>
+   
       
       <Route element={<Main/>} path="/">
         <Route element={<Home/>} path=""/>
